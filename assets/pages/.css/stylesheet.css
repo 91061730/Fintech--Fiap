@@ -1,0 +1,135 @@
+css
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+}
+
+main {
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    width: 100%; 
+    margin: auto; 
+    max-width: 400px; 
+    padding: 2rem; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+input[type="email"],
+input[type="password"] {
+    background-color: #9094D3;
+    color: #fff;
+    border: 1px solid #9094D3;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.title-personalizado {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 2rem 0;
+}
+
+.title-personalizado h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.form-personalizado h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #9094D3;
+    color: #fff;
+    border: none;
+    border-radius: 90px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7073b5;
+}
+
+.icon-personalizado {
+    display: flex;
+    font-size: 1.5rem;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 100%; 
+        padding: 1rem; 
+    }
+
+    .title-personalizado h1 {
+        font-size: 3rem; 
+    }
+
+@media(max-width: 780px) {
+    .form-container{
+        max-width: 80%; 
+        padding: 1rem; 
+
+    }
+
+    .title-personalizado h1{
+        font-size: 3.5rem;
+
+    }
+    
+    }
+
+    button {
+        width: 100%; 
+        padding: 1rem; 
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 0.9rem; 
+        padding: 0.7rem; 
+    }
+
+    .icon-personalizado {
+        font-size: 1.2rem; 
+        gap: 10px; 
+    }
+}
